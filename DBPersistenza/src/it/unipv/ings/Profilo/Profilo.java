@@ -1,8 +1,9 @@
 package it.unipv.ings.Profilo;
 
 public class Profilo {
+
 public Profilo(String idProfilo, String nickname, String descrizione, int numFollower, int numSeguiti, int numPost,
-			String tipo, String messaggioDiGruppo, String messaggioPrivato, String storia, String utente) {
+			String tipo, String messaggioDiGruppo, String messaggioPrivato, String utente, String post) {
 		super();
 		this.idProfilo = idProfilo;
 		this.nickname = nickname;
@@ -13,8 +14,8 @@ public Profilo(String idProfilo, String nickname, String descrizione, int numFol
 		this.tipo = tipo;
 		this.messaggioDiGruppo = messaggioDiGruppo;
 		this.messaggioPrivato = messaggioPrivato;
-		this.storia = storia;
 		this.utente = utente;
+		this.post = post;
 	}
 private String idProfilo;
 private String nickname;
@@ -25,8 +26,8 @@ private int numPost;
 private String tipo;
 private String messaggioDiGruppo;
 private String messaggioPrivato;
-private String storia;
 private String utente;
+private String post;
 public String getIdProfilo() {
 	return idProfilo;
 }
@@ -81,24 +82,24 @@ public String getMessaggioPrivato() {
 public void setMessaggioPrivato(String messaggioPrivato) {
 	this.messaggioPrivato = messaggioPrivato;
 }
-public String getStoria() {
-	return storia;
-}
-public void setStoria(String storia) {
-	this.storia = storia;
-}
 public String getUtente() {
 	return utente;
 }
 public void setUtente(String utente) {
 	this.utente = utente;
 }
+public String getPost() {
+	return post;
+}
+public void setPost(String post) {
+	this.post = post;
+}
 @Override
 public String toString() {
 	return "Profilo [idProfilo=" + idProfilo + ", nickname=" + nickname + ", descrizione=" + descrizione
 			+ ", numFollower=" + numFollower + ", numSeguiti=" + numSeguiti + ", numPost=" + numPost + ", tipo=" + tipo
-			+ ", messaggioDiGruppo=" + messaggioDiGruppo + ", messaggioPrivato=" + messaggioPrivato + ", storia="
-			+ storia + ", utente=" + utente + "]";
+			+ ", messaggioDiGruppo=" + messaggioDiGruppo + ", messaggioPrivato=" + messaggioPrivato + ", utente="
+			+ utente + ", post=" + post + "]";
 }
 
 }

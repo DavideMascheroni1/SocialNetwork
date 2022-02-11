@@ -141,12 +141,12 @@ public class ProfiloDao implements IProfiloDao{
 
 		try
 		{
-			String query="update profilo set messaggioDiGruppo=?,messaggioPrivato=?,storia=?,utente=? where idProfilo=?";
+			String query="update profilo set messaggioDiGruppo=?,messaggioPrivato=?,utente=?,post=? where idProfilo=?";
 			st1 = conn.prepareStatement(query);
 			st1.setString(1, p.getMessaggioDiGruppo());
 			st1.setString(2, p.getMessaggioPrivato());
-			st1.setString(3, p.getStoria());
-			st1.setString(4, p.getUtente());
+			st1.setString(3, p.getUtente());
+			st1.setString(4, p.getPost());
 			st1.setString(5, p.getIdProfilo());
 			
 			st1.executeUpdate();
